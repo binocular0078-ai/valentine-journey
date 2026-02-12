@@ -160,3 +160,10 @@ button:hover {
   font-size: 3rem;
   animation: pulse 2s infinite;
 }
+.burstHeart {
+  position:absolute;
+  width:15px;
+  height:15px;
+  background:#ff4da6;
+  border-radius:50%;
+}
