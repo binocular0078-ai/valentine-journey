@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Valentine Journey ❤️</title>
 
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- PAGE 0: LOCK SCREEN -->
+<section id="lock-screen" class="page active">
+    <div class="lock-container">
+        <div class="image-frame">
+            <img src="assets/images/your-image.png" alt="Special">
+        </div>
+        <h1>Enter The Special Date</h1>
+        <input type="text" id="passwordInput" placeholder="DD MONTH">
+        <button id="unlockBtn">Unlock My Heart</button>
+        <p id="errorMsg"></p>
+    </div>
+</section>
+
+<!-- MUSIC BAR -->
+<div id="musicBar">
+    <button id="playPause">▶</button>
+    <div class="equalizer">
+        <span></span><span></span><span></span>
+    </div>
+</div>
+
+<audio id="bgMusic" loop>
+    <source src="assets/music/romantic.mp3" type="audio/mpeg">
+</audio>
+
+<!-- PAGE 1: PROPOSAL -->
+<section id="proposal" class="page">
+    <h1>Will You Be My Valentine?</h1>
+    <div class="buttons">
+        <button id="yesBtn">YES</button>
+        <button id="noBtn">NO</button>
+    </div>
+</section>
+
+<!-- PAGE 2: QUIZ -->
+<section id="quiz" class="page">
+    <div class="quiz-card">
+        <div id="progressBar"><div></div></div>
+        <div id="questionContainer"></div>
+    </div>
+</section>
+
+<!-- PAGE 3: MEMORY -->
+<section id="memory" class="page">
+    <h1 class="ending">Forever With You ❤️</h1>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
