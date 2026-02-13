@@ -168,6 +168,35 @@ noBtn.addEventListener("click", () => {
 
 yesBtn.addEventListener("click", () => {
 
+  // Fade out proposal music
+  gsap.to(proposalMusic, {
+    volume: 0,
+    duration: 2,
+    onComplete: () => {
+      proposalMusic.pause();
+      proposalMusic.currentTime = 0;
+
+      // AFTER proposal music stops → start romantic bg music
+      bgMusic.volume = 0;
+      bgMusic.play();
+
+      gsap.to(bgMusic, {
+        volume: 0.6,
+        duration: 2
+      });
+
+      playPause.innerText = "⏸";
+    }
+  });
+
+  // Transition after short delay
+  setTimeout(() => {
+    goToPage(proposal, quiz);
+    loadQuestion();
+  }, 1000);
+
+});
+
   gsap.to(proposalMusic, {
     volume: 0,
     duration: 2,
