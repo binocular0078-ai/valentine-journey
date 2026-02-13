@@ -306,6 +306,60 @@ button:hover {
 }
 
 /* =============================
+   QUIZ IMAGE FRAME
+============================= */
+
+.quiz-image-frame {
+  width: 280px;
+  height: 180px;
+  margin-bottom: 25px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 30px rgba(255,0,120,0.5);
+}
+
+.quiz-image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Romantic glow border */
+.quiz-image-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  box-shadow: inset 0 0 40px rgba(255,0,120,0.4);
+}
+
+/* Quiz card upgrade */
+.quiz-card {
+  backdrop-filter: blur(20px);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 0 50px rgba(255,0,120,0.3);
+}
+
+/* Option styling */
+.quiz-option {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 20px;
+  border: none;
+  background: rgba(255,255,255,0.15);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.quiz-option:hover {
+  background: rgba(255,0,120,0.4);
+  transform: scale(1.03);
+}
+
+/* =============================
    LOVE LETTER
 ============================= */
 
