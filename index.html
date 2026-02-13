@@ -102,11 +102,21 @@
 <!-- ================= LOVE LETTER PAGE ================= -->
 <section id="letterPage" class="page">
 
-  <div class="envelope" id="envelope">
-    <div class="letter" id="letter"></div>
+  <div class="envelope-wrapper">
+
+    <div class="envelope" id="envelope">
+      <div class="envelope-flap"></div>
+      <button id="openLetterBtn" class="open-btn">Open 💌</button>
+    </div>
+
+    <div class="letter-fullscreen" id="letterFullscreen">
+      <div class="letter-content" id="letter"></div>
+      <button id="closeLetterBtn" class="close-btn">Close ✖</button>
+    </div>
+
   </div>
 
-  <button id="continueBtn">Continue</button>
+  <button id="continueBtn" style="display:none;">Continue</button>
 
 </section>
 
