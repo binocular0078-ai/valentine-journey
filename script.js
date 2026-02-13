@@ -203,21 +203,25 @@ yesBtn.addEventListener("click", () => {
 
 const questions = [
   {
+    image: "images/q1.jpg",
     question: "When did we first talk?",
     options: ["Random Day", "Fate Day", "23 January", "Never"],
     answer: 2
   },
   {
+    image: "images/q2.jpg",
     question: "What are we?",
     options: ["Friends", "Enemies", "Soulmates", "Neighbors"],
     answer: 2
   },
   {
+    image: "images/q3.jpg",
     question: "Forever means?",
     options: ["Until bored", "Temporary", "Endless", "Few days"],
     answer: 2
   }
 ];
+
 
 let currentQuestion = 0;
 
