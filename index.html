@@ -6,7 +6,8 @@
 <title>Our Valentine Journey ❤️</title>
 
 <!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 
 <!-- GSAP Animation Library -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -22,19 +23,24 @@
 <!-- ================= LOCK SCREEN ================= -->
 <section id="lock-screen" class="page active">
 
-  <!-- Background Image Layer -->
+  <!-- Background Image -->
   <div class="lock-bg"></div>
 
-  <!-- Glass Card Content -->
+  <!-- Glass Card -->
   <div class="glass-card">
 
-    <div class="image-frame">
-      <img src="images/download.jpg" alt="Special Memory">
-    </div>
+    <h1 class="lock-title">Enter The Special Date</h1>
 
-    <h1>Enter The Special Date</h1>
+    <p class="hint-text">
+      Hint: It's a date 💌 <br>
+      (Example – 12 AUGUST) <br>
+      The hint is in the image.
+    </p>
 
-    <input type="text" id="passwordInput" placeholder="DD MONTH" autocomplete="off">
+   <div class="input-wrapper">
+  <img src="images/lock-icon.png" class="input-icon">
+  <input type="text" id="passwordInput" placeholder="DD MONTH" autocomplete="off">
+</div>
 
     <button id="unlockBtn">Unlock My Heart</button>
 
@@ -43,6 +49,7 @@
   </div>
 
 </section>
+
 
       <!-- IMPORTANT: match your image file name -->
       <img src="images/download.jpg" alt="Special Memory">
