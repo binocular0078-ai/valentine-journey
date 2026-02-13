@@ -79,7 +79,7 @@ canvas {
     rgba(50, 0, 40, 0.7),
     rgba(120, 0, 80, 0.7)
   );
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(1px);
   z-index: 0;
   border-radius: 30px;
 }
