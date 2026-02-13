@@ -177,8 +177,15 @@ yesBtn.addEventListener("click", () => {
       proposalMusic.currentTime = 0;
 
       // AFTER proposal music stops → start romantic bg music
-      bgMusic.volume = 0;
-      bgMusic.play();
+    bgMusic.volume = 0;
+
+bgMusic.play().then(() => {
+  gsap.to(bgMusic, { volume: 0.6, duration: 2 });
+  playPause.innerText = "⏸";
+}).catch(err => {
+  console.log("Autoplay blocked:", err);
+});
+Music.play();
 
       gsap.to(bgMusic, {
         volume: 0.6,
