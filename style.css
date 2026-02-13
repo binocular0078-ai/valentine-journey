@@ -110,6 +110,22 @@ h1 {
 }
 
 /* =============================
+   LOCK ICON
+============================= */
+
+.lock-icon {
+  width: 70px;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 0 20px #ff4da6);
+  animation: lockPulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes lockPulse {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+
+/* =============================
    LOCK SCREEN INPUT + BUTTON
 ============================= */
 
