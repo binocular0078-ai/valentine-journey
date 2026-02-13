@@ -1,9 +1,4 @@
 
-const proposalMusic = new Audio("music/proposal.mp3");
-proposalMusic.volume = 0;
-
-proposalMusic.play();
-gsap.to(proposalMusic, { volume: 1, duration: 3 });
 
 /* =========================
    FLOATING HEART PARTICLES
@@ -182,22 +177,7 @@ yesBtn.addEventListener("click", () => {
     }
   });
 
-  // Heart burst animation
-  for (let i = 0; i < 25; i++) {
-    let burst = document.createElement("div");
-    burst.className = "burstHeart";
-    document.body.appendChild(burst);
-
-    burst.style.left = Math.random() * 100 + "%";
-    burst.style.top = Math.random() * 100 + "%";
-
-    gsap.to(burst, {
-      y: -200,
-      opacity: 0,
-      duration: 1.5,
-      onComplete: () => burst.remove()
-    });
-  }
+  
 
   // Wait 1 second before changing page (for emotion)
   setTimeout(() => {
