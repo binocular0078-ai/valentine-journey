@@ -569,3 +569,66 @@ button:hover {
   .glass-card { padding: 25px; }
   .envelope { width: 280px; height: 200px; }
 }
+
+/* ================= MEMORY PAGE ================= */
+
+.memory-wrapper {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 80px 20px;
+}
+
+/* Frame */
+.memory-card {
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  background: linear-gradient(145deg,#fff0f5,#ffd6e8);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+  transform: translateY(80px);
+  opacity: 0;
+}
+
+/* Image */
+.memory-card img {
+  width: 100%;
+  display: block;
+}
+
+/* Tagline */
+.memory-text {
+  padding: 18px;
+  font-size: 18px;
+  font-family: 'Playfair Display', serif;
+  color: #4a0033;
+  text-align: center;
+}
+
+/* Forever text */
+.forever-text {
+  font-size: 3rem;
+  text-align: center;
+  margin: 100px 0;
+  font-family: 'Playfair Display', serif;
+  opacity: 0;
+}
+
+/* Music button */
+.memory-music {
+  text-align: center;
+  margin-top: 60px;
+}
+
+#memoryMusicBtn {
+  background: #ff4da6;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
