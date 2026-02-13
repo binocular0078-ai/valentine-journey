@@ -205,19 +205,19 @@ const questions = [
   {
     image: "images/q1.jpg",
     question: "When did we first talk?",
-    options: ["Random Day", "Fate Day", "23 January", "Never"],
-    answer: 2
+    options: ["Random Day", "Fate Day", "7th November", "Never"],
+    answer: 1
   },
   {
     image: "images/q2.jpg",
-    question: "What are we?",
-    options: ["Friends", "Enemies", "Soulmates", "Neighbors"],
-    answer: 2
+    question: "If I disappear for one day, what will you do?",
+    options: ["Sleep peacefully", "Call police", "Cry and spam call me", "Start missing me in 5 minutes"],
+    answer: [0, 2]
   },
   {
     image: "images/q3.jpg",
-    question: "Forever means?",
-    options: ["Until bored", "Temporary", "Endless", "Few days"],
+    question: "What is my biggest weakness?",
+    options: ["Anger", "Overthinking", "You", "Laziness"],
     answer: 2
   }
 ];
@@ -267,8 +267,22 @@ function loadQuestion() {
 
 
 function checkAnswer(selected) {
-  if (selected === questions[currentQuestion].answer) {
+
+  const q = questions[currentQuestion];
+
+  // If question has multiple answers
+  let correctAnswers;
+
+  if (q.answers) {
+    correctAnswers = q.answers;
+  } else {
+    correctAnswers = [q.answer]; // convert single answer into array
+  }
+
+  if (correctAnswers.includes(selected)) {
+
     currentQuestion++;
+
     if (currentQuestion < questions.length) {
       loadQuestion();
     } else {
@@ -278,11 +292,14 @@ function checkAnswer(selected) {
         openLetter();
       }, 800);
     }
+
   } else {
+
     gsap.fromTo(questionContainer,
       { x: -10 },
       { x: 10, repeat: 4, yoyo: true, duration: 0.1 }
     );
+
   }
 }
 
