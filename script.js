@@ -206,7 +206,7 @@ const questions = [
     image: "images/q1.jpg",
     question: "When did we first talk?",
     options: ["Random Day", "Fate Day", "7th November", "Never"],
-    answer: 1
+    answer: [1]
   },
   {
     image: "images/q2.jpg",
@@ -218,7 +218,7 @@ const questions = [
     image: "images/q3.jpg",
     question: "What is my biggest weakness?",
     options: ["Anger", "Overthinking", "You", "Laziness"],
-    answer: 2
+    answer: [2]
   }
 ];
 
