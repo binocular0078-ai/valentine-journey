@@ -165,6 +165,11 @@ noBtn.addEventListener("click", () => {
   }
 });
 
+document.body.style.background = "#ff4da6";
+setTimeout(() => {
+  document.body.style.background = "";
+}, 200);
+
 yesBtn.addEventListener("click", () => {
 
   // Fade out proposal music smoothly
