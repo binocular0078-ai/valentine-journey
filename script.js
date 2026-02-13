@@ -121,6 +121,7 @@ unlockBtn.addEventListener("click", () => {
 
 playPause.addEventListener("click", () => {
 
+  // If proposal page is active → control proposalMusic
   if (proposal.classList.contains("active")) {
 
     if (proposalMusic.paused) {
@@ -131,17 +132,23 @@ playPause.addEventListener("click", () => {
       playPause.innerText = "▶";
     }
 
-  } else {
+  } 
+  // Otherwise → control romantic bgMusic
+  else {
 
     if (bgMusic.paused) {
-    //  bgMusic.play();
-      playPause.innerText = "⏸";
+      bgMusic.play().then(() => {
+        playPause.innerText = "⏸";
+      }).catch(err => {
+        console.log("Play blocked:", err);
+      });
     } else {
       bgMusic.pause();
       playPause.innerText = "▶";
     }
 
   }
+
 });
 
 
