@@ -229,8 +229,19 @@ const questionContainer = document.getElementById("questionContainer");
 const progressBar = document.querySelector("#progressBar div");
 
 function loadQuestion() {
+
   const q = questions[currentQuestion];
   questionContainer.innerHTML = "";
+
+  // Change image
+  const quizImage = document.getElementById("quizImage");
+  quizImage.src = q.image;
+
+  // Animate image
+  gsap.fromTo(".quiz-image-frame",
+    { opacity: 0, scale: 0.9 },
+    { opacity: 1, scale: 1, duration: 0.8 }
+  );
 
   let questionEl = document.createElement("h2");
   questionEl.innerText = q.question;
@@ -239,13 +250,21 @@ function loadQuestion() {
   q.options.forEach((option, index) => {
     let btn = document.createElement("button");
     btn.innerText = option;
-    btn.style.margin = "10px";
+    btn.classList.add("quiz-option");
     btn.onclick = () => checkAnswer(index);
     questionContainer.appendChild(btn);
   });
 
-  progressBar.style.width = ((currentQuestion) / questions.length) * 100 + "%";
+  progressBar.style.width =
+    ((currentQuestion) / questions.length) * 100 + "%";
+
+  // Animate card
+  gsap.fromTo(".quiz-card",
+    { opacity: 0, y: 30 },
+    { opacity: 1, y: 0, duration: 0.6 }
+  );
 }
+
 
 function checkAnswer(selected) {
   if (selected === questions[currentQuestion].answer) {
