@@ -272,6 +272,45 @@ button:hover {
   animation: pulse 1.5s infinite;
 }
 
+/* =============================
+   PROPOSAL IMAGE BACKGROUND
+============================= */
+
+#proposal {
+  position: relative;
+  overflow: hidden;
+}
+
+.proposal-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("images/proposal.jpg") center/cover no-repeat;
+  animation: cinematicZoom 20s ease-in-out infinite alternate;
+  z-index: -2;
+}
+
+.proposal-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0,0,0,0.3),
+    rgba(80,0,40,0.6)
+  );
+  z-index: -1;
+}
+
+.proposal-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+@keyframes cinematicZoom {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.08); }
+}
+
 @keyframes pulse {
   0%{transform: scale(1);}
   50%{transform: scale(1.1);}
