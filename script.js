@@ -73,16 +73,32 @@ proposalMusic.volume = 0;
 ========================= */
 
 function goToPage(current, next) {
+
   gsap.to(current, {
     opacity: 0,
     duration: 0.8,
     onComplete: () => {
+
       current.classList.remove("active");
       next.classList.add("active");
-      gsap.fromTo(next, { opacity: 0 }, { opacity: 1, duration: 0.8 });
+
+      gsap.fromTo(next,
+        { opacity: 0 },
+        { opacity: 1, duration: 0.8 }
+      );
+
+      // 🎬 Step 5 Background Mood Change
+      if (next === letterPage) {
+        gsap.to("body", {
+          background: "linear-gradient(135deg, #12000a, #2e0018)",
+          duration: 1
+        });
+      }
+
     }
   });
 }
+
 
 
 /* =========================
@@ -301,9 +317,12 @@ function checkAnswer(selected) {
     } else {
       progressBar.style.width = "100%";
       setTimeout(() => {
-        goToPage(quiz, letterPage);
-        openLetter();
-      }, 800);
+      goToPage(quiz, letterPage);
+
+setTimeout(() => {
+  cinematicLetterEntrance();
+}, 600);
+
     }
 
   } else {
@@ -383,21 +402,93 @@ wealth in my heart, then I scorn to
 then I scorn to change my state with kings.
                               ---khumbokorno`;
 
-function openLetter() {
-  typeLetter();
+function cinematicLetterEntrance() {
+
+  const envelope = document.getElementById("envelope");
+
+  gsap.fromTo(envelope,
+    { opacity: 0, scale: 0.8, rotateX: -15 },
+    {
+      opacity: 1,
+      scale: 1,
+      rotateX: 0,
+      duration: 1.2,
+      ease: "power3.out",
+      onComplete: () => {
+        typeLetterCinematic();
+      }
+    }
+  );
+
 }
 
-function typeLetter() {
+function openLetter() {
+  cinematicLetterEntrance();
+}
+
+function cinematicLetterEntrance() {
+
+  const envelope = document.getElementById("envelope");
+
+  gsap.fromTo(envelope,
+    { opacity: 0, scale: 0.8, rotateX: -15 },
+    {
+      opacity: 1,
+      scale: 1,
+      rotateX: 0,
+      duration: 1.2,
+      ease: "power3.out",
+      onComplete: () => {
+        typeLetterCinematic();
+      }
+    }
+  );
+}
+
+function typeLetterCinematic() {
+
   const letter = document.getElementById("letter");
   letter.innerHTML = "";
+
   let i = 0;
 
-  let interval = setInterval(() => {
-    letter.innerHTML += letterText[i];
-    i++;
-    if (i >= letterText.length) clearInterval(interval);
-  }, 40);
+  function type() {
+
+    if (i < letterText.length) {
+
+      letter.innerHTML += letterText[i];
+
+      // small dramatic pauses
+      if (
+        letterText[i] === "." ||
+        letterText[i] === "!" ||
+        letterText[i] === "?" ||
+        letterText[i] === "\n"
+      ) {
+        i++;
+        setTimeout(type, 200);
+      } else {
+        i++;
+        setTimeout(type, 35);
+      }
+
+      letter.scrollTop = letter.scrollHeight;
+
+    } else {
+
+      // soft glow effect at end
+      gsap.fromTo(letter,
+        { boxShadow: "0 0 0px rgba(255,0,120,0)" },
+        { boxShadow: "0 0 35px rgba(255,0,120,0.6)", duration: 1 }
+      );
+
+    }
+
+  }
+
+  type();
 }
+
 
 document.getElementById("continueBtn").addEventListener("click", () => {
   goToPage(letterPage, memory);
