@@ -206,21 +206,27 @@ const questions = [
     image: "images/q1.jpg",
     question: "When did we first talk?",
     options: ["Random Day", "Fate Day", "7th November", "Never"],
-    answer: [1]
+    answers: [1]
   },
   {
     image: "images/q2.jpg",
     question: "If I disappear for one day, what will you do?",
-    options: ["Sleep peacefully", "Call police", "Cry and spam call me", "Start missing me in 5 minutes"],
-    answer: [0, 2]
+    options: [
+      "Sleep peacefully",
+      "Call police",
+      "Cry and spam call me",
+      "Start missing me in 5 minutes"
+    ],
+    answers: [0, 2]
   },
   {
     image: "images/q3.jpg",
     question: "What is my biggest weakness?",
     options: ["Anger", "Overthinking", "You", "Laziness"],
-    answer: [2]
+    answers: [2]
   }
 ];
+
 
 
 let currentQuestion = 0;
