@@ -323,60 +323,64 @@ function checkAnswer(selected) {
 
 const letterText = `Hey Balo, Gandu; Riya
 
-kemon achis ? 😒 okay... tor tareef korte toh chai na but 
+Kemon achis? 😒 Okay... tor tareef korte toh chai na but 
 ajke korte hobe lagche, agei bole dilam vao khabi na 😒.
-on a random day in the college 7th november that kc suv ke jodi 
-admin banin rakhtam thole hoi to tor moto gandu petam na.
-seeing you in the class you saying your number to me to be added in the group.
+On a random day in the college, 7th November, that KC SUV ke jodi 
+admin baniye rakhtam, tahole hoyto tor moto gandu petam na.
+Seeing you in the class, you saying your number to me to be added in the group.
 
-
-i remember your tired, boring and daring face which was giving me death threat.
-but somehow i happen to message you and got to know you and that day also your ex still
-playing with you. YOUR EX KI BOLBO ER BAPARE; you choose me or picked me still i am in doubt,
+I remember your tired, boring, and daring face which was giving me death threats.
+But somehow I happened to message you and got to know you, and that day also your ex was still
+playing with you. YOUR EX KI BOLBO ER BAPARE; you chose me or picked me, still I am in doubt,
 will he again come and you will go with him, you will patch up with him, you will cheat on me with him
-or any other guy who is better than me of course you will get better guy than me, i will not tell you to choose me 
-yet you have that power to choose who you love kintu tao kharap lagbe and again FIRSE KATGAYA. well i am dont know i 
-i am doing all this with because of insecurities or what is truly but jokhon bar bar kat te thake and that feeling of 
-(YOU ARE CURSED YOU WILL NOT GET LOVE, YOU ARE PANUTI, NO ONE LOVES YOU, EVERYONE IS TEMPORARY) comes i doubt and 
-feel that you will also gonna go someday and this all will be memory. how long can i bear this i dont know. and all this 
-makes me to doubt and get the truth from you. well i know you have done so much efforts for me but since you had already first
-and very possessive mind for him and also have done so much for him i somewhow thinks that you loved him more than me 
-and did much efforts for him. well afterall i also think you have moved on from him even though this thing is only known
-to you. BHAI BHAI love letter eo EX vore dilam gal dis na abar 🥲.
+or any other guy who is better than me — of course you will get a better guy than me. I will not tell you to choose me, 
+yet you have that power to choose who you love, kintu tao kharap lagbe and again FIRSE KATGAYA.
+Well, I don’t know if I am doing all this because of insecurities or what is true, but jokhon bar bar katte thake and that feeling of 
+(YOU ARE CURSED, YOU WILL NOT GET LOVE, YOU ARE PANUTI, NO ONE LOVES YOU, EVERYONE IS TEMPORARY) comes, I doubt and 
+feel that you will also gonna go someday and this all will be memory.
+How long can I bear this, I don’t know. And all this makes me doubt and get the truth from you.
+Well, I know you have done so much effort for me, but since you had already a first and very possessive mind for him and also have done so much for him, 
+I somehow think that you loved him more than me and did more efforts for him.
+Well, after all, I also think you have moved on from him even though this thing is only known to you.
+BHAI BHAI love letter eo EX bhore dilam, gal dis na abar 🥲.
 
+DEKHHH how much I love (hate) your ex 😁 but I love (definitely not opposite) you more than him.
+I don’t know about future but I definitely want to know (hypocrisy).
+Baal, you look good honestly. Your EYES are like a Pacific where if I can’t swim perfectly, I will die for sure.
+Your CUTENESS — I adore it. How that dumbass said that you don’t look good, I still can’t believe.
+Your VOICE speaks of that child who lost her from the start of this world.
+Tu deserve koris everything you desired but somehow this cruel world does not let you get that.
+I have seen your honesty and purity you did to get loved, but you put that in the wrong place with wrong actions.
+I don’t know about me that you feel something with me, BUT this love thing always ended very bad for me.
+That’s why I try my best and don’t hurt anyone, and eventually I end up being alone.
+That’s why I am this possessive, because this casual game is never for me.
+YOU just care for me, listen to me, and tolerate my anger although you don’t have to do this.
+I don’t want this to go another failure because of not trying and not fighting for it.
 
-DEKHHH how much i love(hate) youR ex 😁 but i love(definetly not opposite) you more than him. i dont know abou future but i 
-definetly want to know(hypocrisy). baal you look good honestly your EYES like a pacific where if i cant swim perfectly i will
-die for sure. your CUTENESS i adore it how that dumbasss said that you dont look good i still cant belive. your VOICE speaks of 
-that child who lost her from the start of this world. tu deserve koris everything you desired but somehow thisc ruel world not let 
-you get that, i have seen your honesty and purity you did to get loved but you put that in wrong place with wrong actions. i dont 
-know about me that you feel something with me BUT this love thing always ended very bad for me thats why i try my best and dont hurt
-anyone and eventually i end up being alone thats why i am this possessive cause this casual game never for me. YOU just care for me 
-listen to me and tolerate my anger although you dont have to do this. i dont want this to go another failure because of not trying and 
-not fighting for it.
-i see you say about unconditional love i dont know how long this would go for but at the very end when the real
-fight comes we need that condition to get married well if i dont get there where i have to to get married and after all this if i have
-nothing you choose me i will love you but if you somehow have to let me go i will still love you there would be no regret for me cause 
-i failed you by not reaching there where i have to. i will still love you miss you then move on but this is not so easy 
-i will accept the reality since i have loved you i i will be happy if your happy.
+I see you say about unconditional love. I don’t know how long this would go for, but at the very end when the real
+fight comes, we need that condition to get married.
+Well, if I don’t get there where I have to to get married, and after all this if I have nothing and you choose me, I will love you.
+But if you somehow have to let me go, I will still love you. There would be no regret for me because 
+I failed you by not reaching there where I have to.
+I will still love you, miss you, then move on — but this is not so easy.
+I will accept the reality since I have loved you.
+I will be happy if you're happy.
 
+BHAI BHAI besi emotional hoye gelam, ebar closing kori.
+Dekh, tu gandu botis thik ache, rag dekhabi but bole dichi block korbi na,
+bole dilam 😐 ar tor pakamo bondo kore dibo jodi cheat korechis ba vatalcho kaoke.
+AMI RAG DEKHABO, AMI BLOCK KORBO, ar ektu ektu ex ke niye khuchabo 😁😁 (joking)
 
-BHAI BHAI besi emotional hoye gelam ebar closing kori , dekh tu gandu botis thik ache rag dekhabi but bole dichi block korbi na
-bole dilam 😐 ar tor pakamo bondo kore dibo jodi cheat korechis ba vatalcho kaoke. AMI RAG DEKHABO , AMI BLOCK KORBO, ar ektu ektu
-ex ke niye khuchabo 😁😁(joking) 
+VALENTINE BOTE, AJKE TOH BESI BOLLAM NA.
+Ei website to ami 7 Feb theke vabchi ar banachi, tu vabis na reel dekhe banalchi.
+Hmm, ChatGPT er help niye banalchi but puro manually banalchi.
 
-
-VALENTIINE BOTE AJKE TOH BESI BOLLAM NA
-ei website to ami 7 feb theke vabchi ar banachi tu vabis na reel dekhe banalchi
-hmm chat gpt er help niye banalchi but puro manually banalchi.
-
-
-yet i hereby decide to fall for you
-you my gandu there would not be time 
-you trigger my senses and my heart.
-you my darling gandu remembering brings
-wealth in my heart, then i scron to 
-then i scron to change my state with kings.
+Yet I hereby decide to fall for you.
+You my gandu, there would not be time.
+You trigger my senses and my heart.
+You my darling gandu, remembering brings
+wealth in my heart, then I scorn to
+then I scorn to change my state with kings.
                               ---khumbokorno`;
 
 function openLetter() {
