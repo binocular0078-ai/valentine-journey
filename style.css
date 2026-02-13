@@ -25,8 +25,7 @@ body {
 
 canvas {
   position: fixed;
-  top: 0;
-  left: 0;
+  inset: 0;
   z-index: 0;
 }
 
@@ -52,6 +51,16 @@ canvas {
 }
 
 /* =============================
+   TYPOGRAPHY
+============================= */
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* =============================
    GLASS CARD
 ============================= */
 
@@ -62,32 +71,9 @@ canvas {
   max-width: 420px;
   width: 100%;
   overflow: hidden;
-
-  /* YOUR IMAGE HERE */
-  background: url("images/lock-icon.png") center/cover no-repeat;
-
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
   box-shadow: 0 0 60px rgba(255, 0, 100, 0.4);
-  animation: fadeInCard 1.5s ease forwards;
-}
-
-/* Romantic overlay over the image */
-.glass-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    rgba(50, 0, 40, 0.7),
-    rgba(120, 0, 80, 0.7)
-  );
-  backdrop-filter: blur(1px);
-  z-index: 0;
-  border-radius: 30px;
-}
-
-/* Make text appear above overlay */
-.glass-card * {
-  position: relative;
-  z-index: 1;
 }
 
 /* =============================
@@ -101,17 +87,13 @@ canvas {
 
 .lock-bg {
   position: absolute;
-  width: 110%;
-  height: 110%;
-  top: -5%;
-  left: -5%;
+  inset: -5%;
   background: url("images/your-bg.png") center/cover no-repeat;
-  filter: blur(6px);
-  z-index: -1;
+  filter: blur(3px);
   animation: slowZoom 18s ease-in-out infinite alternate;
+  z-index: 0;
 }
 
-/* Dark romantic overlay */
 .lock-bg::after {
   content: "";
   position: absolute;
@@ -122,47 +104,30 @@ canvas {
   );
 }
 
-/* Slow cinematic zoom */
 @keyframes slowZoom {
   0% { transform: scale(1); }
   100% { transform: scale(1.08); }
 }
 
 /* =============================
-   LOCK SCREEN
+   LOCK SCREEN INPUT + BUTTON
 ============================= */
 
-.image-frame {
-  width: 170px;
-  height: 170px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 4px solid #ff4da6;
-  margin: 0 auto 20px auto;
-  box-shadow: 0 0 25px #ff4da6;
-}
-
-.image-frame img {
+#passwordInput {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-h1 {
-  font-family: 'Great Vibes', cursive;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-input {
-  width: 100%;
-  padding: 12px;
+  padding: 14px;
   border-radius: 30px;
   border: none;
   text-align: center;
   font-size: 16px;
   margin-bottom: 15px;
   outline: none;
+  background: rgba(255,255,255,0.15);
+  color: white;
+}
+
+#passwordInput::placeholder {
+  color: #ffcce6;
 }
 
 button {
@@ -173,7 +138,7 @@ button {
   background: #ff4da6;
   color: white;
   font-weight: 600;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
 button:hover {
@@ -184,40 +149,6 @@ button:hover {
 #errorMsg {
   margin-top: 10px;
   color: #ffcccc;
-}
-
-/* =============================
-   INPUT WITH IMAGE ICON
-============================= */
-
-.input-wrapper {
-  position: relative;
-  width: 100%;
-  margin-bottom: 15px;
-}
-
-.input-icon {
-  position: absolute;
-  left: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 22px;
-  height: 22px;
-  opacity: 0.8;
-  pointer-events: none;
-}
-
-.input-wrapper input {
-  width: 100%;
-  padding: 14px 14px 14px 45px; /* left padding for icon */
-  border-radius: 30px;
-  border: none;
-  text-align: center;
-  font-size: 16px;
-  outline: none;
-  background: rgba(255,255,255,0.15);
-  color: white;
-  backdrop-filter: blur(10px);
 }
 
 /* =============================
@@ -258,24 +189,6 @@ button:hover {
    PROPOSAL PAGE
 ============================= */
 
-.bigText {
-  font-size: 3rem;
-  margin-bottom: 30px;
-}
-
-.buttons {
-  display: flex;
-  gap: 20px;
-}
-
-#yesBtn {
-  animation: pulse 1.5s infinite;
-}
-
-/* =============================
-   PROPOSAL IMAGE BACKGROUND
-============================= */
-
 #proposal {
   position: relative;
   overflow: hidden;
@@ -283,11 +196,10 @@ button:hover {
 
 .proposal-bg {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background: url("images/proposal.jpg") center/cover no-repeat;
   animation: cinematicZoom 20s ease-in-out infinite alternate;
-  z-index: -2;
+  z-index: 0;
 }
 
 .proposal-overlay {
@@ -297,13 +209,27 @@ button:hover {
     rgba(0,0,0,0.3),
     rgba(80,0,40,0.6)
   );
-  z-index: -1;
+  z-index: 1;
 }
 
 .proposal-content {
   position: relative;
   z-index: 2;
-  text-align: center;
+}
+
+.bigText {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+#yesBtn {
+  animation: pulse 1.5s infinite;
 }
 
 @keyframes cinematicZoom {
@@ -346,11 +272,6 @@ button:hover {
   transition: 0.4s;
 }
 
-.quiz-card button {
-  width: 100%;
-  margin-top: 10px;
-}
-
 /* =============================
    LOVE LETTER
 ============================= */
@@ -360,7 +281,6 @@ button:hover {
   height: 220px;
   background: linear-gradient(135deg, #fff0f5, #ffd6e8);
   border-radius: 12px;
-  position: relative;
   box-shadow: 0 15px 30px rgba(0,0,0,0.3);
   display: flex;
   justify-content: center;
@@ -431,20 +351,8 @@ button:hover {
 ============================= */
 
 @media (max-width: 600px) {
-  .bigText {
-    font-size: 2.2rem;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  .glass-card {
-    padding: 25px;
-  }
-
-  .envelope {
-    width: 280px;
-    height: 200px;
-  }
+  .bigText { font-size: 2.2rem; }
+  h1 { font-size: 2rem; }
+  .glass-card { padding: 25px; }
+  .envelope { width: 280px; height: 200px; }
 }
