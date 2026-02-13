@@ -1,7 +1,10 @@
+
+// Register GSAP ScrollTrigger
+gsap.registerPlugin(ScrollTrigger);
+
 /* =========================
    FLOATING HEART PARTICLES
 ========================= */
-
 const canvas = document.getElementById("heartsCanvas");
 const ctx = canvas.getContext("2d");
 
